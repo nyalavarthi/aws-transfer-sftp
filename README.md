@@ -21,7 +21,7 @@ terraform init -backend-config=backends/dev-env.tf
 terraform workspace new "dev"
 #terraform workspace select "dev"
 
-#pal and apply
+#plan and apply
 terraform plan
 terraform apply
 
