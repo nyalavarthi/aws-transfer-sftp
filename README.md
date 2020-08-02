@@ -26,3 +26,6 @@ terraform plan
 terraform apply
 
 ```
+
+Refer to this documentation for more details -> http://i-cloudconsulting.com/aws-transfer-for-sftp/
+
