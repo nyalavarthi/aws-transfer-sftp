@@ -10,6 +10,9 @@ Following resources will be created by the repo :
 </ul>
 terraform workspaces is impemented for this repo, refer to the variables.tf for env specific values. 
 
+This project uses terrform workspaces - refer to this article if you are new to workspaces. - http://i-cloudconsulting.com/terraform-workspaces/
+
+
 <p>
 Terraform commands to run & apply the changes.
 
