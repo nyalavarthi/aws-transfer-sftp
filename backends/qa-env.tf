@@ -1,3 +1,3 @@
 bucket = "qa-app-terraform-state"
-key    = "prefix/ad-ds.tfstate"
+key    = "prefix/sftp.tfstate"
 region = "us-east-1"
