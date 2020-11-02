@@ -1,3 +1,3 @@
 bucket = "ny-terraform-state-bkt"
-key    = "prefix/ad-ds.tfstate"
+key    = "prefix/sftp.tfstate"
 region = "us-east-2"
