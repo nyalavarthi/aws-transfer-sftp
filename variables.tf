@@ -67,14 +67,14 @@ variable "secret_key" {
 # terraform workspace new "dev"
 # terraform plan
 # terraform apply
-/* locals {
+locals {
   workspace_env = "${lookup(var.workspace_to_environment_map, terraform.workspace, "dev")}"
   #convert to uppercase 
   environment      = "${upper(local.workspace_env)}"
   sftp_bucket_name = "${var.sftp_bucket_name_map[local.workspace_env]}"
   sftp_user        = "${var.sftp_user_map[local.workspace_env]}"
 
-} */
+} 
 
 
 variable "owner_name" {
