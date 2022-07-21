@@ -11,7 +11,7 @@ resource "aws_kms_key" "mykey" {
 resource "aws_s3_bucket" "b" {
   bucket = "sftp-bucket-ny1"
   acl    = "private"
-  region = "us-east-2"
+  region = "us-east-1"
   versioning {
     enabled = true
   }
