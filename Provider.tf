@@ -1,6 +1,6 @@
 # we provision resources only in aws region which is defined by the variables
 provider "aws" {
-  region = "us-east-2"
+  region = "us-east-1"
 }
 
 #use -backend-config parameter to send backend s3 details, example : 

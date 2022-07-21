@@ -100,5 +100,5 @@ resource "aws_transfer_user" "ftp_user" {
 resource "aws_transfer_ssh_key" "ssh_key" {
   server_id = aws_transfer_server.sftp_server.id
   user_name = aws_transfer_user.ftp_user.user_name
-  body      = "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEApjf+e/na2t1iIX2mSSyR3ll5VrlpxHS8THx9PIOPnoNXC5y4ERS7tJ/n50RiS6y9QiGKl0dDQvCaIVL0Ydj3NSYENKKYZ694vwro0uCH8FgmUEaofqWT9gogCsdj1SRLVhHzLub7Yqt4iFcXlM3RvMTUl0bwjowe5yyiWWKJL3ycwC+USEDgL1vsyS7zm4RcyC/FIn6oKoc/Y5rfoR+WWBLnSU8L1605sE4X/Z2GGb4JQj4VlopmBXLW9CyST5eXb0U5FU6+nL30fZVpgFim0IpBj4hCYyTClxwztl1WW9jmiCRM2JPdbv5TazJC1wxPx6NJDqrVmmcxClpLy3q+oQ== rsa-key-20200405"
+  body      = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAHiBBiFxyVCMQ5k3uQm4CYS/9ZzafLj5+IZ+Vpp+Tl5 malij9@MKT1000941"
 }

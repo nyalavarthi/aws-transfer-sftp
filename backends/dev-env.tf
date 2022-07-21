@@ -1,3 +1,3 @@
-bucket = "ny-terraform-state-bkt"
+bucket = "us-ciscoise-bucket"
 key    = "prefix/sftp.tfstate"
-region = "us-east-2"
+region = "us-east-1"

@@ -55,5 +55,5 @@ locals {
 
 
 variable "owner_name" {
-  default = "Narendra Yalavarthi"
+  default = "Jhojo Malicdem"
 }
