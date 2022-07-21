@@ -36,10 +36,10 @@ variable "sftp_user_map" {
 }
 
 #account details
-/* variable "region" {
+variable "region" {
   type        = string
   description = "default aws region"
-} */
+} 
 
 variable "access_key" {
   type        = string
