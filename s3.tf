@@ -11,17 +11,12 @@ resource "aws_kms_key" "mykey" {
 resource "aws_s3_bucket" "b" {
   bucket = "sftp-bucket-ny1"
 
-  #region = "us-east-1"
-  versioning {
-    enabled = true
-  }
   tags = {
     Name        = local.sftp_bucket_name
     environment = local.environment
     Owner       = var.owner_name,
     DataType    = "SFTP files"
   }
-
 
   /* 
   logging {
@@ -30,18 +25,15 @@ resource "aws_s3_bucket" "b" {
   }
   */
 
-  # I am using default AES256 encryption instead of KSM
-  server_side_encryption_configuration {
-    rule {
-      apply_server_side_encryption_by_default {
-        #kms_master_key_id = aws_kms_key.mykey.arn
-        #sse_algorithm     = "aws:kms"
-        sse_algorithm = "AES256"
-      }
-    }
-  }
-
 }
+
+resource "aws_s3_bucket_versioning" "b_version" {
+  bucket = aws_s3_bucket.b.id
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
+
 resource "aws_s3_bucket_server_side_encryption_configuration" "b_encryption" {
     bucket = aws_s3_bucket.b.bucket
 

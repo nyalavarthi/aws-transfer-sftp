@@ -76,7 +76,7 @@ resource "aws_transfer_server" "sftp_server" {
 }
 
 #create a folder for the user in S3 bucket which was previourly created. ( not part of this code )
-resource "aws_s3_bucket_object" "s3_folder" {
+resource "aws_s3_object" "s3_folder" {
   depends_on = [aws_s3_bucket.b]
   bucket     = local.sftp_bucket_name
   #bucket       = "sftp-bucket-ny2"
