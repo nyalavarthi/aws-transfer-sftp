@@ -73,7 +73,6 @@ locals {
   environment      = "${upper(local.workspace_env)}"
   sftp_bucket_name = "${var.sftp_bucket_name_map[local.workspace_env]}"
   sftp_user        = "${var.sftp_user_map[local.workspace_env]}"
-
 } 
 
 
