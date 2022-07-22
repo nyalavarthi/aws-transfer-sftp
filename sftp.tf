@@ -99,5 +99,5 @@ resource "aws_transfer_user" "ftp_user" {
 resource "aws_transfer_ssh_key" "ssh_key" {
   server_id = aws_transfer_server.sftp_server.id
   user_name = aws_transfer_user.ftp_user.user_name
-  body      = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAHiBBiFxyVCMQ5k3uQm4CYS/9ZzafLj5+IZ+Vpp+Tl5 malij9@MKT1000941"
+  body      = "test only"
 }
