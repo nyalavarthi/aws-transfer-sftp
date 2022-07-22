@@ -17,7 +17,7 @@ variable "sftp_bucket_name_map" {
   type        = map
   default = {
     sbx = ""
-    dev = "sftp-bucket-ny1"
+    dev = "sftp-bucket-ny13"
     qa  = ""
     prd = ""
   }
