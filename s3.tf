@@ -9,7 +9,7 @@ resource "aws_kms_key" "mykey" {
 }
 
 resource "aws_s3_bucket" "b" {
-  bucket = "sftp-bucket-ny1"
+  bucket = "sftp-bucket-ny13"
 
   tags = {
     Name        = local.sftp_bucket_name

@@ -37,8 +37,7 @@ resource "aws_iam_role_policy" "sftp_policy" {
         {
 			    "Effect": "Allow",
           "Action": [
-            "s3:ListBucket",
-            "s3:GetBucketLocation"
+            "s3:*"
           ],
          "Resource": [
             "arn:aws:s3:::${local.sftp_bucket_name}"
